@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>First tailwind page</title>
+
+</head>
+<body >
+    <div class="relative flex flex-col h-screen min-h-screen">
+    <!--Navbar-->
+    <nav class="relative container mx-auto p-6">
+        <!--flex container-->
+        <div class="flex items-center justify-between">
+            <!--logo-->
+            <div class="pt-2">
+                <img src="assets/img/logo_small.png" alt="logo">
+            </div>
+            <!--menu items-->
+            <div class="hidden space-x-6 md:flex font-bold">
+                <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Shopping Basket</a>
+                <a href="#" class="hover:text-darkGrayishBlue">How to order</a>
+                <a href="#" class="hover:text-darkGrayishBlue">New releases</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+            </div>
+            <!--button-->
+            <div class="relative"> 
+                <div class="absolute top-4 left-3">
+                     <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
+                </div>
+              <input type="text" class="h-14 w-96 pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
+                <div class="absolute top-2 right-2">
+                    
+                    <button class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">Search</button>
+                    
+                </div>
+            </div>
+            
+            <!--Hamburger Icon-->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--mobile menu-->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">Shopping Basket</a>
+                <a href="#">How to order</a>
+                <a href="#">New releases</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    
+    <main class="flex flex-grow bg-testPurple  min-w-screen flex flex-row content-space-between">
+     
+          <aside class="w-1/5 m-4 h-130 bg-brightRed rounded">
+              <h2 class="text-center text-white font-bold ">Catalouge</h2>
+             
+          </aside>
+          <section class="w-4/5">
+            <h2 class="text-center text-white font-bold"> more test test</h2>
+          </section>
+       
+    </main>
+
+    
+   
+
+    <!--footer-->
+    <footer class="bg-veryDarkBlue">
+        <!--flex container-->
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8  md:flex-row md:space-y-0"></div>
+    </footer>
+</div>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
